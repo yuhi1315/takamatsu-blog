@@ -1,0 +1,42 @@
+// レスポンシブ対応cssの設定
+$sm: 375px;
+$md: 600px;
+$lg: 1280px;
+
+@mixin sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+// カラーの設定
+$primary: #ED6D00;
+$secondary: #030539;
+$red: #CE2405;
+$white: #FFF;
+$green: #019846;
+$gray: #ccc;
+$blue: #5fa2dd;
+$pale-blue: #063A67;
+$pale-orange: #F28B33;
+
+@mixin fontBunkyuMidashi {
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+}
+
+@mixin fontShader {
+  font-family: 'Shader', sans-serif;
+}
+

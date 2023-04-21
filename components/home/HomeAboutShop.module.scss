@@ -1,0 +1,65 @@
+@import "styles/mixins";
+
+.service {
+  margin: 5rem 0;
+  letter-spacing: 0.4rem;
+
+  .inner {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    width: 32rem;
+    @include lg {
+      width:80rem;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    img {
+      width: 100%;
+      @include lg {
+        width: 40rem;
+      }
+    }
+
+    .detail {
+      @include lg {
+        width: 40rem;
+        margin-left: 3rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        margin-top: 2.4rem;
+        @include lg {
+          font-size: 2rem;
+        }
+      }
+
+      br {
+        @include lg {
+          display: none;
+        }
+      }
+
+      span {
+        color: $primary;
+      }
+
+      .explanation {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        line-height: 2.3rem;
+        @include lg {
+          margin-top: 3rem;
+        }
+      }
+
+      .warning {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+}

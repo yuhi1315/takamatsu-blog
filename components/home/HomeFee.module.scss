@@ -1,0 +1,16 @@
+.fee {
+    .inner {
+        margin: 0 auto;
+        width: 50rem;
+        table {
+            width: 100%;
+            border: 2px;  
+            height: 6rem;
+            border-collapse: collapse;
+            tr {
+                border: 1px solid;
+            }
+
+        }
+    } 
+}
