@@ -11,7 +11,6 @@ export default function Home() {
     {/* <Header/> */}
     <HomeMainVisual/>
     <HomeAboutShop/>
-    <HomeAboutDrt/>
     <HomeFee/>
     </React.Fragment>
   )
